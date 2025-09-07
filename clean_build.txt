@@ -1,0 +1,12 @@
+./gradlew clean build --no-build-cache
+
+# zum bauen
+./gradlew clean build
+
+# Deamons stoppen.
+./gradlew --stop
+
+# Schauen welche Deamons aktiv sind: 
+jps -l | grep Gradle
+
+# mit kill -9 prozesse beenden.

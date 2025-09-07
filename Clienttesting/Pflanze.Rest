@@ -1,0 +1,35 @@
+### Alle Pflanzen abrufen
+GET http://localhost:8080/api/pflanzen
+Accept: application/json
+
+###
+
+### Einzelne Pflanze abrufen (ID = 1)
+GET http://localhost:8080/api/pflanzen/1
+Accept: application/json
+
+###
+
+### Neue Pflanze erstellen
+POST http://localhost:8080/api/pflanzen
+Content-Type: application/json
+
+{
+  "name": "Weizen"
+}
+
+###
+
+### Pflanze mit ID 1 aktualisieren
+PUT http://localhost:8080/api/pflanzen/1
+Content-Type: application/json
+
+{
+  "name": "Winterweizen"
+}
+
+###
+
+### Pflanze mit ID 1 löschen
+DELETE http://localhost:8080/api/pflanzen/1
+
